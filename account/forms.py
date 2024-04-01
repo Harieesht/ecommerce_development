@@ -13,7 +13,7 @@ class CreateUserForm(UserCreationForm):
         self.fields['email'].required=True
     def clean_email(self):
         email=self.cleaned_data.get('email')
-        if User.object.filter(email=email).exists():
+        if User.objects.filter(email=email).exists():
             raise forms.ValidationError("This email is already registered")
         if len(email)>=250:
             raise forms.ValidationError("your email is too long.... ")
