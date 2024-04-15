@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'cart',
     'account',
     'crispy_forms',
+    'payment',
 ]
 
 MIDDLEWARE = [
@@ -141,4 +142,4 @@ EMAIL_PORT='587'
 EMAIL_USE_TLS=True
 
 EMAIL_HOST_USER='rakhavandaranharieesh@gmail.com'
-EMAIL_HOST_PASSWORD=''
+EMAIL_HOST_PASSWORD='jekf rath mkup ajch'

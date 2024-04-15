@@ -1,0 +1,35 @@
+
+{% include 'store/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<style>
+
+    body{
+
+        background-color: grey;
+
+
+
+        
+    }
+</style>
+
+<body>
+
+    <br><br>
+    <div class="container bg-white shadow-md p-5 form-layout">
+        <h3>Welcome, {{user}}</h3>
+        <hr>
+        <br><br>
+        <p>This is your dashboard where you can perform any og the following!</p>
+        <li>Track your orders </li>
+        <li>manage your accounts</li>
+        <li>Logout</li>
+        <br><br>
+
+    </div>
+
+
+{% endblock %}
