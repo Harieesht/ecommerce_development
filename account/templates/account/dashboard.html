@@ -23,13 +23,31 @@
         <h3>Welcome, {{user}}</h3>
         <hr>
         <br><br>
-        <p>This is your dashboard where you can perform any og the following!</p>
+        <p>This is your dashboard where you can perform any of the following:</p>
         <li>Track your orders </li>
-        <li>manage your accounts</li>
-        <li>Logout</li>
-        <br><br>
+        <li>Manage your accounts</li>
+        <br>
 
     </div>
+    <br>
+    <div class="container bg-white shadow-md p-5 form-layout">
 
+        <h3>Track your orders</h3>
+        <hr>
+        <a class="btn btn-primary navbar-btn text-white" type="button" href="{% url 'user-logout' %}">My Orders</a>
+
+    </div>
+    <br>
+    <div class="container bg-white shadow-md p-5 form-layout">
+
+        <h3>Manage your account</h3>
+        <hr>
+        <br>
+        <a class="btn btn-primary navbar-btn text-white" type="button" href="{% url 'profile-management' %}">Profile Management</a>
+        <br><br>
+        <a class="btn btn-danger navbar-btn text-white" type="button" href="{% url 'user-logout' %}">Logout</a>
+
+    </div>
+    <br>
 
 {% endblock %}
